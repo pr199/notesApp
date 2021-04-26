@@ -15,14 +15,15 @@
 
 
 <script>
-function getNotes()Notes
-let Notes = getExistingNotes()
-let notesArrey = object.value(note)
-let orderedList = document.getElement By id('noteslist')
-let listItem = document.createElement('li')
-listItem.innerHTML = note
-orderedList.appendchild(listItem)
-}
-} ()
+(function getNotes() {
+let Notes = getExistingNotes();
+let notesArrey = object.values(note);
+let orderedList = document.getElementByid("notes-list");
+notesArrey.forEach((note) => {
+let listItem = document.createElement("li");
+listItem.innerHTML = note;
+orderedList.appendchild(listItem);
+});
+}) ();
 
 </script>
