@@ -21,14 +21,14 @@
 var textElement = document.getElementById("note")
 
 function saveNote() {
-    if (text Element.value =" "){
+    if (textElement.value =" "){
         return alert(text is empty!')
-        const id = getNote id ()
+        const id = getNoteId()
             let noteObject = getExistingNotes()
             if (!noteObject) {
                 noteObject = {}
-                noteObject {id} = textElement. value
-                local storage.setItem("note",JSON.stringify(noteObject))
+                noteObject[id] = textElement. value
+                localstorage.setItem("note",JSON.stringify(noteObject))
                 alert("Note saved")
         
     }
